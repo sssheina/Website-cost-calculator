@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website cost calculator</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/1.png"
+      type="image/png">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    
+    <form class="form">
+        <h1>Website cost calculator</h1>
+        <fieldset>
+            <p>Select site type:</p>
+            <select class="auction">
+                <option value="700">Landing page</option>
+                <option value="1000">Site-card</option>
+                <option value="4000">Web-portal</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <p>Choose optional services:</p>
+            <div class="services">
+                <label for="service1">
+                    <input class="inputServices" type="radio" id="service1" value="700">
+                    <span>Copywriting</span>
+                </label>
+                <label for="service2">
+                    <input class="inputServices" type="radio" id="service2" value="700">
+                    <span>Web-design</span>
+                </label>
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit">Calculate</button>
+            <p class="result"></p>
+        </div>
+    </form>
+    <script src="./assets/scripts/index.js"></script>
+</body>
+</html>
